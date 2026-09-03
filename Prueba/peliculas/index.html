@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceMovie - Iniciar Sesion</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>SpaceMovie</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Iniciar Sesion</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contenedor-formulario">
+      <h2>Iniciar Sesion</h2>
+      <form id="formularioInicio" novalidate>
+        <div class="grupo-campo">
+          <label for="correo">Correo Electronico:</label>
+          <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" autocomplete="email" required>
+          <small class="mensaje-error" id="errorCorreo"></small>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="clave">Contraseña:</label>
+          <input type="password" id="clave" name="clave" placeholder="Tu contraseña" autocomplete="current-password" required>
+          <small class="mensaje-error" id="errorClave"></small>
+        </div>
+
+        <button type="submit">Entrar</button>
+      </form>
+      <p>¿No tienes una cuenta? <a href="registro.html">Registrate aqui</a></p>
+    </section>
+  </main>
+
+
+  <script src="js/validacion-inicio.js"></script>
+</body>
+</html>

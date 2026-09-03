@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpaceMovie - Registro</title>
+  <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+  <header>
+    <h1>SpaceMovie</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Iniciar Sesion</a></li>
+        <li><a href="registro.html">Registrarse</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contenedor-formulario">
+      <h2>Crear Cuenta</h2>
+      <form id="formularioRegistro" novalidate>
+        <div class="grupo-campo">
+          <label for="nombreCompleto">Nombre Completo:</label>
+          <input type="text" id="nombreCompleto" name="nombreCompleto" placeholder="Juan Pérez" autocomplete="name" required>
+          <small class="mensaje-error" id="errorNombre"></small>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="correoRegistro">Correo Electronico:</label>
+          <input type="email" id="correoRegistro" name="correoRegistro" placeholder="ejemplo@correo.com" autocomplete="email" required>
+          <small class="mensaje-error" id="errorCorreoRegistro"></small>
+        </div>
+
+        <div class="grupo-campo">
+          <label for="claveRegistro">Contraseña:</label>
+          <input type="password" id="claveRegistro" name="claveRegistro" placeholder="Minimo 6 caracteres" autocomplete="new-password" required>
+          <small class="mensaje-error" id="errorClaveRegistro"></small>
+        </div>
+
+        <button type="submit">Registrarse</button>
+      </form>
+      <p>¿Ya tienes cuenta? <a href="index.html">Inicia sesion</a></p>
+    </section>
+  </main>
+
+  <script src="js/validacion-registro.js"></script>
+</body>
+</html>
