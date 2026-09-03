@@ -1,0 +1,228 @@
+/* =========================================================
+   SpaceMovie — Sinopsis
+   Misma paleta y tipografía que el resto del sitio:
+   fondo oscuro cálido, acentos dorado/vino, tipografía
+   editorial (Bodoni Moda) + interfaz (Work Sans).
+   ========================================================= */
+
+:root {
+  --bg: #15130F;
+  --surface: #1F1B15;
+  --surface-2: #262019;
+  --ink: #EDE6D8;
+  --ink-muted: #A79C89;
+  --gold: #C9A24B;
+  --wine: #7A2331;
+  --line: #33291D;
+  --font-display: "Bodoni Moda", serif;
+  --font-body: "Work Sans", sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+.cuerpo {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font-body);
+  line-height: 1.6;
+}
+
+.cuerpo a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ---------- Encabezado ---------- */
+
+.cabezal {
+  background: var(--surface);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.cabezal-interior {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 18px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.tituloPagina {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+.barra {
+  display: flex;
+  gap: 28px;
+}
+
+.barra a {
+  font-size: 0.95rem;
+  color: var(--ink-muted);
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+
+.barra a:hover,
+.barra a:focus-visible {
+  color: var(--ink);
+  border-bottom-color: var(--gold);
+}
+
+/* ---------- Ficha de la película ---------- */
+
+.ficha {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 56px 24px 96px;
+  display: grid;
+  grid-template-columns: 340px 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.poster {
+  position: relative;
+}
+
+.poster img {
+  width: 100%;
+  display: block;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 14px;
+  box-shadow: 0 24px 48px -20px rgba(0, 0, 0, 0.6);
+}
+
+.tituloPeli {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 1.15;
+  margin: 0 0 14px;
+}
+
+.sub-titulo {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.4vw, 2.6rem);
+  font-weight: 900;
+  margin: 0 0 24px;
+}
+
+.sinopsis p {
+  margin: 0 0 8px;
+  color: var(--ink-muted);
+  font-size: 0.95rem;
+}
+
+.sinopsis p span {
+  color: var(--ink);
+  font-weight: 500;
+}
+
+.titulo-resumen {
+  font-family: var(--font-display);
+  font-size: 1.3rem;
+  font-weight: 700;
+  margin: 28px 0 12px;
+}
+
+.resumen {
+  max-width: 65ch;
+  color: var(--ink) !important;
+  font-size: 1.02rem;
+}
+
+/* ---------- Pie de página ---------- */
+
+.info {
+  background: var(--surface);
+  border-top: 1px solid var(--line);
+}
+
+.info-interior {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 48px 24px;
+  display: grid;
+  grid-template-columns: 1.6fr 1fr 1fr 1fr;
+  gap: 32px;
+}
+
+.info-marca .info-logo {
+  font-family: var(--font-display);
+  color: var(--gold);
+  font-size: 1.1rem;
+  margin: 0 0 6px;
+}
+
+.info-marca p {
+  color: var(--ink-muted);
+  font-size: 0.9rem;
+  margin: 0;
+  max-width: 32ch;
+}
+
+.info-titulo-columna {
+  color: var(--ink);
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin: 0 0 12px;
+}
+
+.info-enlaces,
+.info-contacto,
+.info-redes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+
+.info-enlaces a,
+.info-redes a {
+  color: var(--ink-muted);
+}
+
+.info-enlaces a:hover,
+.info-redes a:hover {
+  color: var(--gold);
+}
+
+.info-copy {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px 24px;
+  border-top: 1px solid var(--line);
+  color: var(--ink-muted);
+  font-size: 0.85rem;
+}
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 780px) {
+  .ficha {
+    grid-template-columns: 1fr;
+  }
+  .poster {
+    max-width: 260px;
+  }
+  .info-interior {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 480px) {
+  .info-interior {
+    grid-template-columns: 1fr;
+  }
+}
