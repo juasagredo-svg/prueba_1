@@ -26,8 +26,6 @@
   text-decoration: none;
 }
 
-/* ---------- Encabezado ---------- */
-
 .cabezal {
   background: var(--surface);
   border-bottom: 1px solid var(--line);
@@ -69,8 +67,6 @@
   color: var(--ink);
   border-bottom-color: var(--gold);
 }
-
-/* ---------- Ficha de la película ---------- */
 
 .ficha {
   max-width: 1100px;
@@ -134,7 +130,140 @@
   font-size: 1.02rem;
 }
 
-/* ---------- Pie de página ---------- */
+.aprobacion {
+  grid-column: 1 / -1;
+  display: flex;
+  gap: 40px;
+  padding: 28px 0;
+  margin-top: 8px;
+  border-top: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+}
+
+.puntaje {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.miniatura {
+  width: 44px;
+  height: 44px;
+  flex-shrink: 0;
+}
+
+.puntaje-texto {
+  display: flex;
+  flex-direction: column;
+}
+
+.valor {
+  font-family: var(--font-display);
+  font-size: 1.7rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1.1;
+}
+
+.puntaje-texto h2 {
+  margin: 2px 0 0;
+  font-size: 0.85rem;
+  font-weight: 500;
+  color: var(--ink-muted);
+}
+
+.reseñas {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  margin-top: 8px;
+}
+
+.reseña {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  padding: 22px 24px;
+}
+
+.reseña-texto {
+  margin: 0 0 14px;
+  color: var(--ink);
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.reseña-autor {
+  margin: 0;
+  color: var(--gold);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.formulario-reseña {
+  grid-column: 1 / -1;
+  max-width: 640px;
+  margin-top: 12px;
+}
+
+.campo {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.campo label {
+  font-size: 0.9rem;
+  color: var(--ink-muted);
+}
+
+.campo input,
+.campo textarea {
+  background: var(--surface-2);
+  border: 1px solid var(--line);
+  color: var(--ink);
+  padding: 11px 14px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 1rem;
+}
+
+.campo input:focus,
+.campo textarea:focus {
+  outline: none;
+  border-color: var(--gold);
+}
+
+.ayuda {
+  color: var(--ink-muted);
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.error {
+  color: var(--wine);
+  font-size: 0.85rem;
+  margin: 0;
+  min-height: 1.2em;
+}
+
+.boton-reseña {
+  background: var(--wine);
+  color: var(--ink);
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.boton-reseña:hover {
+  background: #9C3A49;
+}
 
 .info {
   background: var(--surface);
@@ -200,8 +329,6 @@
   font-size: 0.85rem;
 }
 
-/* ---------- Responsive ---------- */
-
 @media (max-width: 780px) {
   .ficha {
     grid-template-columns: 1fr;
@@ -211,6 +338,13 @@
   }
   .info-interior {
     grid-template-columns: 1fr 1fr;
+  }
+  .aprobacion {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .reseñas {
+    grid-template-columns: 1fr;
   }
 }
 

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coyote VS Acme — Sinopsis | SpaceMovie</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,wght@0,500;0,700;0,900;1,500&family=Work+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/prueba_1/estilos/sinopsis.css">
+</head>
+<body class="cuerpo">
+
+    <header class="cabezal">
+        <div class="cabezal-interior">
+            <a href="/prueba_1/index.html" class="tituloPagina">SpaceMovie</a>
+            <nav class="barra" aria-label="Navegación principal">
+                <a href="/prueba_1/otros/inicio.html">Iniciar sesión</a>
+                <a href="/prueba_1/otros/registro.html">registro</a>
+                <a href="/prueba_1/index.html">Catálogo</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="ficha">
+
+            <div class="poster">
+                <h1 class="tituloPeli" id="titulo">Coyote VS Acme</h1>
+                <img id="poster"
+                     src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOjJyPlri8lIPwvdfWScrzBYEEMfVhw3nIgYd8ZDXWsw&s=10"
+                     alt="Cartel de la película Coyote VS Acme">
+            </div>
+
+            <div class="sinopsis">
+                <h2 class="sub-titulo">Sinopsis de la película</h2>
+                <p class="fecha">Fecha de estreno: <span id="fechaEstreno">21 de noviembre, 2025</span></p>
+                <p class="tiempo">Duración: <span id="duracion">92 min</span></p>
+                <p class="genero">Género: <span id="genero">Comedia, Animación</span></p>
+                <h3 class="titulo-resumen">Resumen</h3>
+                <p class="resumen" id="resumen">
+                    Después de décadas fallando en atrapar al Correcaminos, el Coyote decide
+                    hacer lo impensado: demandar a ACME, la compañía responsable de todos los
+                    productos defectuosos que arruinaron sus planes. En el juicio más absurdo
+                    de la historia, la comedia y la animación se mezclan en una batalla legal
+                    que podría cambiar el destino del desierto… para siempre.
+                </p>
+            </div>
+
+            <div class="aprobacion">
+                <div class="puntaje publico">
+                    <img class="miniatura" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%23C9A24B'/%3E%3Cpath d='M14 25l7 7 13-14' fill='none' stroke='%2315130F' stroke-width='4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E"
+                         alt="Ícono de aprobación del público">
+                    <div class="puntaje-texto">
+                        <span class="valor" id="valorPublico">82%</span>
+                        <h2 class="publico">Público general</h2>
+                    </div>
+                </div>
+                <div class="puntaje profesional">
+                    <img class="miniatura" src="data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Ccircle cx='24' cy='24' r='22' fill='%237A2331'/%3E%3Cpath d='M24 12l3.2 6.7 7.3 1-5.3 5.2 1.3 7.3L24 28.8l-6.5 3.4 1.3-7.3-5.3-5.2 7.3-1z' fill='%23EDE6D8'/%3E%3C/svg%3E"
+                         alt="Ícono de aprobación de la crítica">
+                    <div class="puntaje-texto">
+                        <span class="valor" id="valorCritica">76%</span>
+                        <h2 class="profesional">Crítica especializada</h2>
+                    </div>
+                </div>
+            </div>
+
+            <div class="reseñas" id="listaReseñas">
+            </div>
+
+            <div class="formulario-reseña">
+                <h3 class="titulo-resumen">Deja tu reseña</h3>
+                <form id="form-reseña" novalidate>
+                    <div class="campo">
+                        <label for="reseña-autor-input">Tu nombre</label>
+                        <input type="text" id="reseña-autor-input" name="autor" autocomplete="name" required>
+                        <p class="error" id="error-reseña-autor" role="alert"></p>
+                    </div>
+                    <div class="campo">
+                        <label for="reseña-texto-input">Tu opinión</label>
+                        <textarea id="reseña-texto-input" name="texto" rows="3" required></textarea>
+                        <p class="ayuda">No se permiten menciones (@), enlaces ni contenido publicitario.</p>
+                        <p class="error" id="error-reseña-texto" role="alert"></p>
+                    </div>
+                    <button type="submit" class="boton-reseña">Publicar reseña</button>
+                </form>
+            </div>
+
+        </section>
+    </main>
+
+    <footer class="info">
+        <div class="info-interior">
+
+            <div class="info-marca">
+                <p class="info-logo">SpaceMovie</p>
+                <p>Reseñas, sinopsis y valoraciones de estrenos y clásicos del cine.</p>
+            </div>
+
+            <nav class="info-enlaces" aria-label="Enlaces del sitio">
+                <p class="info-titulo-columna">Explorar</p>
+                <a href="/prueba_1/index.html">Catálogo</a>
+                <a href="/prueba_1/otros/inicio.html">iniciar sesion</a>
+                <a href="/prueba_1/otros/registro.html">Registrarse</a>
+            </nav>
+
+            <div class="info-contacto">
+                <p class="info-titulo-columna">Contacto</p>
+                <p>contacto@spacemovie.cl</p>
+                <p>+56 9 1234 5678</p>
+            </div>
+
+            <div class="info-redes">
+                <p class="info-titulo-columna">Síguenos</p>
+                <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a>
+                <a href="https://x.com" target="_blank" rel="noopener">X (Twitter)</a>
+                <a href="https://youtube.com" target="_blank" rel="noopener">YouTube</a>
+            </div>
+
+        </div>
+
+        <p class="info-copy">© 2026 SpaceMovie. Proyecto académico DSY1104.</p>
+    </footer>
+
+</body>
+<script src="../scripts/sinopsis.js"></script>
+</html>
