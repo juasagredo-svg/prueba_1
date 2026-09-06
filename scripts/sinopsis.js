@@ -75,15 +75,15 @@ let peliculas = [
     id: 6,
     titulo: "spider-man into the spider-verse",
     poster: "https://tse1.mm.bing.net/th/id/OIP.skMUBsPZe4quW7QEa854fAHaK-?r=0&rs=1&pid=ImgDetMain&o=7&rm=3",
-    fechaEstreno: "31 de julio de , 2026",
-    duracion: "145 min",
+    fechaEstreno: "14 de diciembre , 2018",
+    duracion: "117 minutos",
     genero: "superheroes , accion",
-    resumen: "Después del enorme triunfo mundial de Spider-Man: No Way Home, Spider-Man: Brand New Day inicia un rumbo totalmente distinto para Peter Parker y su identidad como superhéroe. Han transcurrido cuatro años desde lo ocurrido en la anterior entrega, y Peter es ahora un hombre adulto que vive en completa soledad, habiendo decidido borrar su presencia de la vida y la memoria de las personas que quiere.",
-    aprobacionPublico: 97,
-    aprobacionCritica: 89,
+    resumen: "En un universo paralelo donde Peter Parker ha muerto, el adolescente Miles Morales se convierte en el nuevo Spider-Man. Sin embargo, el mafioso Kingpin construye un supercolisionador que abre portales a otros universos, trayendo consigo diferentes versiones de Spider-Man: Peter B. Parker, Gwen Stacy, Spider-Man Noir, Peni Parker y Spider-Ham. Juntos deben detener a Kingpin y salvar la realidad, mientras Miles aprende a aceptar su identidad como héroe.",
+    aprobacionPublico: 82,
+    aprobacionCritica: 85,
     reseñas: [
-      { autor: "Martina C.", texto: "es una buena pelicula " },
-      { autor: "Diego F.", texto: "la contruccion de los perdonaje a sido la mejor interpretacion de la pelicula" }
+      { autor: "Martina C.", texto: "me encanta la incorporacion de otros spider-mans de otros universos" },
+      { autor: "Diego F.", texto: "muy buena historia ojala hagan una trilogia" }
     ]
   },{
     id: 7,
