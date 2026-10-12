@@ -16,7 +16,7 @@ function Footer() {
 
             <nav className="info-enlaces" aria-label="Enlaces del sitio">
               <p className="info-titulo-columna">Explorar</p>
-              <Link to="/prueba_1">Inicio</Link>
+              <Link to="/prueba_1/">Inicio</Link>
               <Link to="/register">Registrar</Link>
               <Link to="/login">Iniciar sesión</Link>
             </nav>
