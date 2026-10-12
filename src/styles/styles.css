@@ -1,15 +1,4 @@
-:root {
-  --bg: #15130F;
-  --surface: #1F1B15;
-  --surface-2: #262019;
-  --ink: #EDE6D8;
-  --ink-muted: #A79C89;
-  --gold: #C9A24B;
-  --wine: #7A2331;
-  --line: #33291D;
-  --font-display: "Bodoni Moda", serif;
-  --font-body: "Work Sans", sans-serif;
-}
+
 
 * { box-sizing: border-box; }
 
@@ -38,6 +27,7 @@
   max-width: 1100px;
   margin: 0 auto;
   padding: 18px 24px;
+  gap: 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
