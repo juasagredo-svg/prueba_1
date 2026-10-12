@@ -11,7 +11,6 @@ import Sinopsis from './pages/sinopsis.jsx';
 export default function App() {
   return (
     <>
-    <BrowserRouter>
     <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -20,7 +19,6 @@ export default function App() {
         <Route path="/login" element={<Login />} />
       </Routes>
     <Footer />
-    </BrowserRouter>
     </>
   );
 }
