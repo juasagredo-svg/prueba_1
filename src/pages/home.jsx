@@ -94,7 +94,7 @@ function home() {
 
             <div className="card">
                 <Link to="/sinopsis/7">
-                    <img src="prueba-1/prueba-1/images/La-hora-de-la-desaparicion.webp" alt="poster1"/>
+                    <img src="prueba-1/images/La-hora-de-la-desaparicion.webp" alt="poster1"/>
 
                     <div className="content">
                         <h1 className="name">la hora de la desaparicion</h1>
