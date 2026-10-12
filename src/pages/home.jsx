@@ -8,7 +8,7 @@ function home() {
         <div className="movie-cards">
             <div className="card">
                 <Link to="/sinopsis/1">
-                    <img src="images/COYOTE-VS.-ACME-–-ComediaAventura-copia.webp" alt="poster1"/>
+                    <img src="./images/COYOTE-VS.-ACME-–-ComediaAventura-copia.webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">coyote vs Acme</h1>
                         <h3 className="info">
@@ -22,7 +22,7 @@ function home() {
             </div>
             <div className="card">
                 <Link to="/sinopsis/2">
-                    <img src="images/OIP (1).webp" alt="poster1"/>
+                    <img src="./images/OIP (1).webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">el padrino</h1>
                         <h3 className="info">
@@ -37,7 +37,7 @@ function home() {
             </div>
             <div className="card">
                 <Link to="/sinopsis/3">
-                    <img src="images/descargar (1).webp" alt="poster1"/>
+                    <img src="./images/descargar (1).webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">spider-man brand new day</h1>
                         <h3 className="info">
@@ -51,7 +51,7 @@ function home() {
             </div>
             <div className="card">
                 <Link to="/sinopsis/4">
-                    <img src="images/descargar (3).webp" alt="poster1"/>
+                    <img src="./images/descargar (3).webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">interestellar</h1>
                         <h3 className="info">
@@ -65,7 +65,7 @@ function home() {
             </div>
             <div className="card">
                 <Link to="/sinopsis/5">
-                    <img src="images/descargar (4).webp" alt="poster1"/>
+                    <img src="./images/descargar (4).webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">venom</h1>
                         <h3 className="info">
@@ -79,7 +79,7 @@ function home() {
             </div>
             <div className="card">
                 <Link to="/sinopsis/6">
-                    <img src="images/OIP (2).webp" alt="poster1"/>
+                    <img src="./images/OIP (2).webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">spider-man into the spider-verse</h1>
                         <h3 className="info">
@@ -94,7 +94,7 @@ function home() {
 
             <div className="card">
                 <Link to="/sinopsis/7">
-                    <img src="images/La-hora-de-la-desaparicion.webp" alt="poster1"/>
+                    <img src="./images/La-hora-de-la-desaparicion.webp" alt="poster1"/>
 
                     <div className="content">
                         <h1 className="name">la hora de la desaparicion</h1>
@@ -110,7 +110,7 @@ function home() {
 
             <div className="card">
                 <Link to="/sinopsis/8">
-                    <img src="images/OIP (3).webp" alt="poster1"/>
+                    <img src="./images/OIP (3).webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">superman(2025)</h1>
                         <h3 className="info">
@@ -125,7 +125,7 @@ function home() {
             </div>
             <div className="card">
                 <Link to="/sinopsis/9">
-                    <img src="images/descargar (5).webp" alt="poster1"/>
+                    <img src="./images/descargar (5).webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">dune </h1>
                         <h3 className="info">
@@ -139,7 +139,7 @@ function home() {
             </div>
             <div className="card">
                 <Link to="/sinopsis/10">
-                    <img src="images/descargar.webp" alt="poster1"/>
+                    <img src="./images/descargar.webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">demon slayer castillo infinito</h1>
                         <h3 className="info">
@@ -153,7 +153,7 @@ function home() {
             </div>
             <div className="card">
                 <Link to="/sinopsis/11">
-                    <img src="images/OIP (4).webp" alt="poster1"/>
+                    <img src="./images/OIP (4).webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">la odisea</h1>
                         <h3 className="info">
@@ -169,7 +169,7 @@ function home() {
             </div>
             <div className="card">
                 <Link to="/sinopsis/12">
-                    <img src="images/descargar (2).webp" alt="poster1"/>
+                    <img src="./images/descargar (2).webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">oppenheimer</h1>
                         <h3 className="info">
@@ -184,7 +184,7 @@ function home() {
             </div>
             <div className="card">
                 <Link to="/sinopsis/13">
-                    <img src="images/OIP (5).webp" alt="poster1"/>
+                    <img src="./images/OIP (5).webp" alt="poster1"/>
                     <div className="content">
                         <h1 className="name">Black Clover: La espada del rey mago</h1>
                         <h3 className="info">

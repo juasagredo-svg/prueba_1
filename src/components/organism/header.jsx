@@ -9,7 +9,7 @@ function Header() {
         <>
             {(ruta === '/register' || ruta === '/login') ? (
                 <header>
-                    <Link to="/prueba_1">
+                    <Link to="/prueba_1/">
                         <h1>SpaceMovie</h1>
                     </Link>
                     <nav>
@@ -22,7 +22,7 @@ function Header() {
             ) : (
                 <header className="cabezal">
                     <div className="cabezal-interior">
-                        <Link to="/prueba_1" className="tituloPagina">SpaceMovie</Link>
+                        <Link to="/prueba_1/" className="tituloPagina">SpaceMovie</Link>
                         <nav className="barra" aria-label="Navegación principal">
                             <Link to="/login">Iniciar sesión</Link>
                             <Link to="/register">Registrar</Link>
